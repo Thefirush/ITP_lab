@@ -1,0 +1,4 @@
+C:\Users\Анастасия\AppData\Local\JetBrains\CLion2021.2\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/cygdrive/c/MinGW/bin/gcc.exe -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /cygdrive/c/Users/Анастасия/CLionProjects/untitled3
+CMake Error: CMake was unable to find a build program corresponding to "Unix Makefiles".  CMAKE_MAKE_PROGRAM is not set.  You probably need to select a different build tool.
+-- Configuring incomplete, errors occurred!
+See also "/cygdrive/c/Users/РђРЅР°СЃС‚Р°СЃРёСЏ/CLionProjects/untitled3/cmake-build-debug/CMakeFiles/CMakeOutput.log".
