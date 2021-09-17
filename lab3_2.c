@@ -11,7 +11,12 @@ int main()
 
     // make a histogram of the frequencies of different characters
     for (int i = 0; i < len; i++) {
-        if (str[i] != '~' && str[i] != ' ') {
+        if (str[i] == ' ') {
+            str[i] = '~';
+            ans[i] = '~';
+            ans_point[i] = -1;
+        }
+        if (str[i] != '~') {
             char word = str[i];
             int count = 0;
             for (int j = i; j < len + 1; j++) {
@@ -30,13 +35,23 @@ int main()
     // sort this histogram
     for (int j = 0; j < len-1; j++) {
         for (int i = 0; i < len-1; i++) {
-            if(ans[i] > ans[i + 1]){
+            if(ans_point[i] < ans_point[i + 1]){
                 char c = ans[i];
                 ans[i] = ans[i+1];
                 ans[i+1] = c;
                 int c1 = ans_point[i];
                 ans_point[i] = ans_point[i+1];
                 ans_point[i+1] = c1;
+            }
+            if(ans_point[i] == ans_point[i + 1]) {
+                if(ans[i] > ans[i + 1]){
+                    char c = ans[i];
+                    ans[i] = ans[i+1];
+                    ans[i+1] = c;
+                    int c1 = ans_point[i];
+                    ans_point[i] = ans_point[i+1];
+                    ans_point[i+1] = c1;
+                }
             }
         }
     }
