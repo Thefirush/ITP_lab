@@ -9,7 +9,6 @@ int factorial(int a) {
 }
 int strong_num(int f) {
     int sum = 0;
-    int len = 0;
     int b = f;
     while ( b != 0 ) {
         int k = 0;
