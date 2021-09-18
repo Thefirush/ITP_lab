@@ -10,6 +10,7 @@ int main() {
     char pas_out[len];
     int schet = 0;
     int count = 0;
+    // красивый и милый код
     for (int i = 0; i < len; i++) {
         for (int j = 32; j <= 126 ; j++) {
             schet += 1;
