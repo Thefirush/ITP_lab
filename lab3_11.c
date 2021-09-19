@@ -26,7 +26,6 @@ void printMatrix(int (*matrix)[COLS], int rows, int cols){
 int main()
 {
     int matrix[ROWS][COLS];
-    int i, j;
 
     printf("Enter elements in %dx%d matrix.\n", ROWS, COLS);
     inputMatrix(matrix, ROWS, COLS);
