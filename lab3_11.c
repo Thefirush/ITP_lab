@@ -4,19 +4,15 @@
 #define COLS 3
 
 void inputMatrix(int matrix[][COLS], int rows, int cols){
-    int i, j;
-
-    for(i = 0; i < rows; i++){
-        for(j = 0; j < cols; j++){
+    for(int i = 0; i < rows; i++){
+        for(int j = 0; j < cols; j++){
             scanf("%d", (*(matrix + i) + j));
         }
     }
 }
 void printMatrix(int (*matrix)[COLS], int rows, int cols){
-    int i, j;
-
-    for (i = 0; i < rows; i++){
-        for (j = 0; j < cols; j++){
+    for (int i = 0; i < rows; i++){
+        for (int j = 0; j < cols; j++){
             printf("%d ", *(*(matrix + i) + j));
         }
         printf("\n");
